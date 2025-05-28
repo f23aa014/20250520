@@ -67,3 +67,4 @@ fontStyle
 color
 
 ## Colorについて
+s
