@@ -1,4 +1,4 @@
-## 5/20：まとめa
+## 5/20：まとめtest
 
 RANをクリックすると実行される
 
@@ -26,5 +26,15 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+上記のコードを実行すると赤文字の`Hello Flutter World!!`が表示  
+※背景は黒くなりませんでした。(chromeで実行)
+
+
+## アプリ画面とウィジェットツリー
+
+## アプリ実行の仕組み
+## StatelessWidgetクラスについて
+## MaterialAppクラスについて
+## マテリアルデザインについて
 
 
