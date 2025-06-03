@@ -31,8 +31,9 @@ class MyApp extends StatelessWidget {
 
 
 ## アプリ画面とウィジェットツリー
-
+Flutterでは、画面表示は`ウィジェット`と呼ばれる部品によって作成される
 ## アプリ実行の仕組み
+
 ## StatelessWidgetクラスについて
 ## MaterialAppクラスについて
 ## マテリアルデザインについて
