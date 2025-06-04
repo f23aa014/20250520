@@ -1,5 +1,5 @@
 # 5/27:教科書P74～95
-参照URL: https://flutterstudio.app(Flutter Sutudio)  
+参照URL: [Flutter Sutudio](https://flutterstudio.app)  
 >Flutter Studioとは？  
  
  ※注意点  
@@ -86,20 +86,93 @@ Color.fromARGB(アルファ,赤,緑,青)
 ```
 
 ## テーマを指定する
-Dark Theme:ダークテーマをON/OFFするもの。通常表示はOFFに、暗い背景をベースにした表示にしたければONにしておく  
-Primary Swatch:テーマの基本的な色を指定します  
-Primary Color:標準のテキストなどの色  
-Accent Color:アクセントの色  
-Devider Color:仕切り線の色  
-Canvas Color:キャンバス（グラフィック描画の部分）の色  
-Background Color:背景色として報じを作る際に使われる色  
+Dark Theme: ダークテーマをON/OFFするもの。通常表示はOFFに、暗い背景をベースにした表示にしたければONにしておく  
+Primary Swatch: テーマの基本的な色を指定します  
+Primary Color: 標準のテキストなどの色  
+Accent Color: アクセントの色  
+Devider Color: 仕切り線の色  
+Canvas Color: キャンバス（グラフィック描画の部分）の色  
+Background Color: 背景色として報じを作る際に使われる色  
 FontFamily:使用するフォントファミリーの指定  
 
 
 - テーマ指定
 MaterialAppインスタンスを作成する際、themeにThemeDataが設定さえれるようになります。
+```dart
+class MyApp extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      title: 'Generated App',
+      theme: new ThemeData(
+        primarySwatch: Colors.pink,
+        primaryColor: const Color(0xFFff0000),
+        accentColor: const Color(0xFFe91e63),
+        canvasColor: const Color(0xFFfafafa),
+      ),
+      home: new MyHomePage(),
+    );
+  }
+}
+```
+
+## Centerによる中央揃え
+Center: 中央ぞろえのためのウィジェット
+
+```dart
+class _MyHomePageState extends State<MyHomePage> {
+    @override
+    Widget build(BuildContext context) {
+      return new Scaffold(
+        appBar: new AppBar(
+          title: new Text('App Name'),
+          ),
+        body:
+          new Center(
+            child:
+            new Text(
+              "Hello Flutter!",
+              style: new TextStyle(fontSize:32.0,
+              color: const Color(0xFF000000),
+              fontWeight: FontWeight.w700,
+              fontFamily: "Roboto"),
+            ),
+          ),
+    
+      );
+    }
+}
+```
+
+
+### Centerクラスの基本形
+```dart
+Center(
+  child: ・・・ウィジェット・・・
+)
+```
+
+## Centerクラスについて
+Color
+Alignment
+Sized
+Padding
 
 
 
+```dart
+
+```
 
 
+- Containerクラスの基本形
+```dart
+Container(
+  child: ,
+  padding: <EdgeInsets>,
+  alignment:<Alignment>
+)
+```
+
+- EdgeInsetについて
